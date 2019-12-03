@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Minjust_SEM</class>
+ <widget class="QDialog" name="Minjust_SEM">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Minjust - SEM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>favicon2x.png</normaloff>favicon2x.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>971</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="RssRecEditor">
+       <attribute name="title">
+        <string>Запись RSS</string>
+       </attribute>
+       <widget class="QSpinBox" name="RecId">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>330</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="UrlGrid">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>811</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID URL</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>URL</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Результаты проверок</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Редактирование URL закрыто</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="RecStatusLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>530</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Статус записи</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="RecUrlDel">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>450</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Удалить URL</string>
+        </property>
+       </widget>
+       <widget class="QToolButton" name="RecUrlCreate">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>380</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Добавить URL</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>510</y>
+          <width>941</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>941</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="RecStatusValue">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>530</y>
+          <width>841</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Обработка не начата</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>В процессе обработки</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Обработка завершена</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="RecIdLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>300</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID записи</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="Line" name="line_14">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>360</y>
+          <width>118</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="UrlGrid_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>811</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>Индекс в списке</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Дата/Время</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Автор</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Тема</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Веб-Сайт</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Тело сообщения</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>Значение аттрибута</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>811</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Исходные данные текущей записи из ленты RSS</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>160</y>
+          <width>121</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вниз</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>30</y>
+          <width>121</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вверх</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RecIdLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>300</y>
+          <width>811</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Список извлеченных URL-адресов из текущей записи</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>0</y>
+          <width>121</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>По списку</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="UrlEditor">
+       <attribute name="title">
+        <string>Проверка URL</string>
+       </attribute>
+       <widget class="QWebView" name="BrowserBody">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>941</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="url">
+         <url>
+          <string>about:blank</string>
+         </url>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="ProviderValue">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>51</y>
+          <width>531</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Провайдер не выбран</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Информика</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Юмос-Центр</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>МГТС</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Билайн</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="UrlGoto">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>90</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Перейти</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ProviderLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Провайдер</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="UrlValue">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>90</y>
+          <width>481</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="plainText">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="UrlLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>URL</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="ResultValue">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>530</y>
+          <width>801</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Проверка не выполнена</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Доступен</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заблокирован на стороне сервера</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Заблокирован провайдером</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Недоступен неавторизованным пользователям сайта</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Не найден на сервере</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Сервер или сайт недоступен целиком</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Недоступен по каким-то иным причинам</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="ResultLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>530</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Результат проверки</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="RecIdLabel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID записи</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="UrlNoLabel">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>10</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID URL</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="UrlNoValue">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>10</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="RecIdValue">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>10</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="UrlNoOfLabel">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>10</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>из</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="UrlNoOfValue">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>10</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="plainText">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QDateTimeEdit" name="CheckDateTimeValue">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>10</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="displayFormat">
+         <string>dd.MM.yyyy HH:mm:ss</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CheckDateTimeLabel">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>10</y>
+          <width>141</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Дата/Время проверки</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CheckNoLabel">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>10</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID проверки</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="CheckNoOfValue">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>10</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="plainText">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="CheckNoValue">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>10</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CheckNoOfLabel">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>16</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>из</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="UrlEditClosed">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>90</y>
+          <width>211</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>редактирование URL закрыто</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="CheckToDelete">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>50</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Удалить проверку</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="CheckIsNew">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Новая проверка</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="dedouble">
+       <attribute name="title">
+        <string>Дедупликатор</string>
+       </attribute>
+       <widget class="QTableWidget" name="DeduplGridBody">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>11</y>
+          <width>931</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID записи</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID URL внутри записи</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>URL</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID дубля</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Редактирование закрыто</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QPushButton" name="DeduplAutoSearch">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>480</y>
+          <width>521</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Нахождение похожих URL с разными ID дублей</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>520</y>
+          <width>391</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Групповое создание, переименование, удаление дублей</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DeduplAutoSearch_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>480</y>
+          <width>381</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Автонахождение новых дублей</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="DeduplAutoSearch_3">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>520</y>
+          <width>521</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Нахождение разных URL с одинаковыми ID дублей</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_9">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>480</y>
+          <width>20</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="import_export">
+       <attribute name="title">
+        <string>Импорт-Экспорт</string>
+       </attribute>
+       <widget class="QPushButton" name="ExportRecsToCSV">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>140</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгрузить список всех записей в .CSV</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SyncDBWithRSS">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Синхронизировать БД с RSS-лентой</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ExportRecsToRejik">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгрузить список уникальных URL в .TXT (для rejik)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ExportDBToSqlDump">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>50</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Сделать резервну копию БД</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ExportLogToCSV">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>240</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгрузить журнал в .CSV</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ClearLog">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>280</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Очистить журнал</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ExportReportToPDF">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>330</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгрузить полный отчет в .PDF</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>120</y>
+          <width>901</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>220</y>
+          <width>901</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_7">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>310</y>
+          <width>901</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>901</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>380</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгрузить статистику редактирования в .PDF</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ExportDBToSqlDump_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>901</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Сделать REORG БД на прикладном уровне</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_8">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>360</y>
+          <width>901</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="log">
+       <attribute name="title">
+        <string>Журнал действий</string>
+       </attribute>
+       <widget class="QTableWidget" name="LogGrid">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>11</y>
+          <width>941</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ДатаВремя</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Контекст события</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Описание события</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="settings">
+       <attribute name="title">
+        <string>Настройки</string>
+       </attribute>
+       <widget class="QTableWidget" name="SettingsProxyGrid">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>50</y>
+          <width>921</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID провайдера</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Название провайдера</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Адрес прокси</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Порт прокси</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Логин на прокси</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Пароль на прокси</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Не используется</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QTableWidget" name="SettingsUrlsStatus">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>921</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>ID статуса</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cтатус URL</string>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+        </column>
+       </widget>
+       <widget class="QCheckBox" name="SettingsDonotExportNonblocked">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>500</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгружать только незаблокированные URL</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="SettingsExport1stUrlOnly">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>530</y>
+          <width>321</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Выгружать только первый из дубликатов URL</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="SettingsRssUrlValue">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>10</y>
+          <width>841</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="SettingsRssUrlLabel">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>RSS URL</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="SettingsRssEditNonDevelopedOnly">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>500</y>
+          <width>401</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Редактировать только необработанные записи RSS-ленты</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="Line" name="line_2">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>500</y>
+          <width>3</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_10">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>280</y>
+          <width>921</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_11">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>480</y>
+          <width>921</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stat">
+       <attribute name="title">
+        <string>Статистика</string>
+       </attribute>
+       <widget class="QTreeWidget" name="InfoTreeWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>941</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>Наименование</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Значение</string>
+         </property>
+        </column>
+        <item>
+         <property name="text">
+          <string>Общие данные о системе</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <item>
+          <property name="text">
+           <string>Версия ПО</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Количество записей в БД</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Всего</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Недавно импортированных из RSS</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Содержащих хотя бы один URL</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>По статусам</string>
+          </property>
+         </item>
+        </item>
+        <item>
+         <property name="text">
+          <string>Количество URL</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Всего</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Всего уникальных</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>По результатам проверки</string>
+          </property>
+         </item>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>520</y>
+          <width>91</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Обновить</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Remark">
+       <attribute name="title">
+        <string>Примечание к ...</string>
+       </attribute>
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>53</y>
+          <width>941</width>
+          <height>501</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Примечание к</string>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>10</y>
+          <width>841</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="EditorProgressLabel">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>660</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Готовность текущей единицы</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="EditorProgressValue">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>660</y>
+        <width>411</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PicLabelWorld">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>Globe.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="TextLabel">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>811</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Noto Sans</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Редактор URL-адресов федерального списка экстремистских материалов</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PicLabelFlagRu">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>10</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>flag_russia.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QDialogButtonBox" name="buttonBoxOkCancel">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>660</y>
+        <width>174</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PicLabelHerbMinjust">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>minjust-ru-logo-flag.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="PicLabelLibfl">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>10</y>
+        <width>32</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>favicon2x.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ToPrevEditor">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>660</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>В предыдущий шаг</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_12">
+      <property name="geometry">
+       <rect>
+        <x>789</x>
+        <y>660</y>
+        <width>21</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_13">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>660</y>
+        <width>21</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
